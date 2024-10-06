@@ -6,7 +6,6 @@ import { Autoplay } from "swiper/modules";
 import slider_image1 from "../../../assets/Hero_images/heroimage1.jpg";
 import slider_image2 from "../../../assets/Hero_images/heroimage2.jpg";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 SwiperCore.use([Autoplay]);
 

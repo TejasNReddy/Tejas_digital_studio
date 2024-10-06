@@ -1,29 +1,16 @@
-import Hero from "../Components/Home/Hero/Hero"
-import About from "../Components/Home/About/About"
-import Service from "../Components/Home/Services/Service"
-// import LocomotiveScroll from 'locomotive-scroll';
-// import 'locomotive-scroll/dist/locomotive-scroll.css';
-// import { useEffect, useRef } from "react";
-
-const Home = () => {
-  // const scrollRef = useRef(null);
-  // useEffect(() => {
-  //   const scroll = new LocomotiveScroll({
-  //     el: scrollRef.current,
-  //     smooth: true,
-  //   });
-
-  //   return () => {
-  //     scroll.destroy();
-  //   };
-  // }, []);
+import Hero from "../Components/Home/Hero/Hero";
+import About from "../Components/Home/About/About";
+import Service from "../Components/Home/Services/Service";
+import Testimonial from "../Components/testimonial/Testimonial";
+const Home: React.FC = () => {
   return (
-    <main className="overflow-x-hidden">
-      <Hero/>
-      <About/>
-      <Service/>
-    </main>
-  )
-}
+        <main  className="overflow-x-hidden">
+          <Hero />
+          <About />
+          <Service />
+          <Testimonial />
+        </main>
+  );
+};
 
-export default Home
+export default Home;
