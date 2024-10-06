@@ -4,6 +4,8 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Works from "./Pages/Works";
 import Contact from "./Pages/Contact";
+import "locomotive-scroll/dist/locomotive-scroll.css";
+
 
 export default function App() {
   return (
