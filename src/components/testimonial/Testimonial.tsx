@@ -1,4 +1,3 @@
-import "locomotive-scroll/dist/locomotive-scroll.css";
 import MySwiper from "./MySwiper";
 import parallaxBG from "../../assets/Hero_images/heroimage1.jpg"
  

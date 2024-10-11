@@ -5,7 +5,6 @@ import Services from "./Pages/Services";
 import Works from "./Pages/Works";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar/Navbar";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 import Footer from "./Components/Footer/Footer";
 
 export default function App() {
@@ -19,7 +18,7 @@ export default function App() {
         <Route path="/Works" element={<Works />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
