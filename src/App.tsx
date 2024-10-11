@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/Works" element={<Works />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
