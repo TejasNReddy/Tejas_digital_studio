@@ -1,18 +1,17 @@
 import team1 from '../../assets/About_images/team1.jpg'
+import team2 from '../../assets/About_images/team2.jpg'
+import team3 from '../../assets/About_images/team3.jpg'
 const About_team = () => {
 
     const about_team=[
         {
-            name:'Enrico Brown',
             image:team1,
         },
         {
-            name:'Enrico Brown',
-            image:team1,
+            image:team2,
         },
         {
-            name:'Enrico Brown',
-            image:team1,
+            image:team3,
         },
         
     ]
@@ -28,8 +27,7 @@ const About_team = () => {
         {about_team.map((about,index)=>{
             return(
                 <div key={index} className="p-6 shadow-md relative h-fit">
-                    <img src={about.image} alt={about.name} className="object-cover w-full h-64 brightness-50 hover:brightness-100 rounded-xl cursor-pointer" />
-                    <h3 className="text-xl font-semibold text-primary_purple absolute top-5 left-10  rounded-b-xl bg-white px-5 py-2">{about.name}</h3>
+                    <img src={about.image} alt="about_team" className="aspect-square object-cover  brightness-50 hover:brightness-100 rounded-xl cursor-pointer" />
                 </div>
             )
         })}
