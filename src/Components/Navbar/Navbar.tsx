@@ -1,4 +1,4 @@
-import logo from '../../assets/icon.png'
+import logo from '../../assets/iconSmall.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import MobileNavbar from './MobileNavbar';
 import { useEffect, useState } from 'react';

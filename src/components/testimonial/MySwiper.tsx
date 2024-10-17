@@ -22,13 +22,13 @@ const MySwiper: React.FC = () => {
       img: user1,
     },
     {
-      name: "John Doe",
+      name: "Jane Doe",
       testimonial:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum. Autem, commodi quae!",
       img: user2,
     },
     {
-      name: "John Doe",
+      name: "Sam Smith",
       testimonial:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum. Autem, commodi quae!",
       img: user3,
@@ -43,42 +43,42 @@ const MySwiper: React.FC = () => {
         delay: 3000,
         disableOnInteraction: false,
       }}
-      style={{
-        width: "450px",
-        height: "250px",
-      }}
+      className="w-[80vw] md:w-[60vw] lg:w-[35vw] h-auto"
     >
-      {users.map((user,item) => {
-        return (
-          <SwiperSlide key={item}>
-            <div className="bg-white h-full w-full p-10 " >
-              <div className="flex justify-around gap-4">
-                <span className="h-[70px] w-[5px] bg-black"></span>
-                <div className="flex items-center justify-center">
-                  <p>{user.testimonial} </p>
-                </div>
-              </div>
-
-              <div className="h-[2px] w-full bg-slate-100 mx-auto my-5"></div>
-
-              <div className="flex justify-between items-center">
-                <div className="flex justify-center items-center gap-4">
-                  <img
-                    src={user1}
-                    alt="user"
-                    className="w-[50px] h-[50px] rounded-full"
-                  />
-                  <span>{user.name}</span>
-                </div>
-                <img
-                  src={doubleQuote}
-                  alt="doubleQuote"
-                />
+      {users.map((user, item) => (
+        <SwiperSlide key={item}>
+          <div className="bg-white h-full w-full p-6 md:p-10">
+            <div className="flex justify-around gap-4">
+              <span className="h-[70px] w-[5px] bg-black"></span>
+              <div className="flex items-center justify-center">
+                <p className="text-sm md:text-base lg:text-lg">
+                  {user.testimonial}
+                </p>
               </div>
             </div>
-          </SwiperSlide>
-        );
-      })}
+
+            <div className="h-[2px] w-full bg-slate-100 mx-auto my-5"></div>
+
+            <div className="flex justify-between items-center">
+              <div className="flex justify-center items-center gap-4">
+                <img
+                  src={user.img}
+                  alt="user"
+                  className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full"
+                />
+                <span className="text-sm md:text-base lg:text-lg">
+                  {user.name}
+                </span>
+              </div>
+              <img
+                src={doubleQuote}
+                alt="doubleQuote"
+                className="w-[20px] h-[20px] md:w-[30px] md:h-[30px]"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
