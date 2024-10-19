@@ -23,20 +23,20 @@ const Footer: React.FC = () => {
                 Tejas Photo Studio
               </h1>
               <p className="mt-5 leading-6">
-                Photography inila miss uman saten eliten finus vivera alacus
-                miss the drudean seneice miss notumane tonec a fermen.
+                Capturing life’s special moments, creating lasting memories that
+                tell your unique story and bring joy for years to come.
               </p>
             </div>
             <div className="">
               <h1 className="text-white text-[1.125rem] font-bold ">
                 Quick Links
               </h1>
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 ">
                 {["About", "Services", "Works"].map((link) => (
                   <li key={link} className="relative">
                     <motion.a
                       href={`#${link.toLowerCase()}`}
-                      className="text-[#cccccc] relative z-10"
+                      className="text-[rgb(204,204,204)] relative z-10"
                       whileHover={{ color: "#ffffff" }}
                     >
                       {link}
@@ -52,8 +52,8 @@ const Footer: React.FC = () => {
               </ul>
             </div>
           </div>
-          <div>
-            <h1 className="text-white text-[1.125rem] font-bold  ">Contact</h1>
+          <div className=" max-lg:mt-8">
+            <h1 className="text-white text-[1.125rem] font-bold">Contact</h1>
             <div className="flex flex-col gap-3 mt-4">
               <div className="flex items-center gap-2">
                 <img
@@ -61,19 +61,34 @@ const Footer: React.FC = () => {
                   alt="phone"
                   className="h-[1.5rem] w-[1.5rem]"
                 />
-                <span>+1 123-456-0606</span>
+                <a href="tel:+919986866995" className="text-white">
+                  +91 9986866995
+                </a>
               </div>
               <div className="flex items-center gap-2">
-                <img src={mailIcon} alt="" className="h-[1.5rem] w-[1.5rem]" />
-                <span>info@phoxel.com</span>
+                <img
+                  src={mailIcon}
+                  alt="mail"
+                  className="h-[1.5rem] w-[1.5rem]"
+                />
+                <a href="mailto:tejas222666@gmail.com" className="text-white">
+                  tejas222666@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <img
                   src={locationIcon}
-                  alt=""
+                  alt="location"
                   className="h-[1.5rem] w-[1.5rem]"
                 />
-                <span>120 King St, Charleston SC 29401, USA</span>
+                <a
+                  href="https://www.google.com/maps/dir//Surya+city+chandupura+post+anekal+taluk,+Anekal+Main+Road,+Bengaluru,+Karnataka+560099/@12.7895507,77.6628685,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae6e7e92a261e5:0xd7808f65be77ea3e!2m2!1d77.7040683!2d12.7895539?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  Surya city Chandupura, Anekal Main Road, Bengaluru-560099
+                </a>
               </div>
             </div>
           </div>

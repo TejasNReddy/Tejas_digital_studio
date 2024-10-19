@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import doubleQuote from "../../assets/doubleQuote.png";
-import user1 from "../../assets/user1.jpg";
-import user2 from "../../assets/user1.jpg";
-import user3 from "../../assets/user1.jpg";
+import user1 from "../../assets/works/photoFrame.jpg";
+import user2 from "../../assets/works/photoFrame.jpg";
+import user3 from "../../assets/works/photoFrame.jpg";
 
 const MySwiper: React.FC = () => {
   interface User {
