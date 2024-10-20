@@ -24,11 +24,7 @@ const HeroSwiper: React.FC = () => {
           >
             <div className="absolute inset-0 bg-black opacity-35 lg:opacity-30" />
             <div className=" z-10 text-white ml-10 flex flex-col gap-3">
-              <h5
-                className="lg:text-3xl text-2xl font-medium"
-              >
-                Welcome to{" "}
-              </h5>
+              <h5 className="lg:text-3xl text-2xl font-medium">Welcome to </h5>
               <h1 className="text-5xl font-bold lg:text-8xl">
                 Tejas Digital Studio
               </h1>
@@ -51,14 +47,17 @@ const HeroSwiper: React.FC = () => {
             className="w-full h-full bg-right lg:bg-center bg-no-repeat bg-cover flex items-center justify-baseline"
             style={{ backgroundImage: `url(${slider_image1})` }}
           >
-            <div className="absolute inset-0 bg-black opacity-35 lg:opacity-25" />
+            <div className="absolute inset-0 bg-black opacity-35 lg:opacity-40" />
             <div className=" z-10 text-white ml-10 flex flex-col gap-3">
-              <h5 className="lg:text-3xl text-2xl font-medium">Welcome to </h5>
-              <h1 className="text-5xl font-bold lg:text-8xl">
-                Tejas Digital Studio
+              <h5 className="lg:text-3xl text-2xl font-medium">
+                At Tejas Digital Studio we
+              </h5>
+              <h1 className="text-3xl font-bold lg:text-8xl">
+                Capturing Stories, Creating Memories
               </h1>
               <p className="lg:text-2xl text-xl mt-3">
-                Where Every Shot Tells a Story
+                Get in touch to book your next unforgettable shoot—let's capture
+                your story!
               </p>
               <Link
                 to="/Contact"

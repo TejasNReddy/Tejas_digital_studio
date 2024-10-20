@@ -1,6 +1,5 @@
 import React from "react";
-import footerBG from "../../assets/footerBG.jpg";
-// import logo from "../../assets/icon.png";
+import footerBG from "../../assets/footerbackground.jpg";
 import mailIcon from "../../assets/mail.png";
 import iphoneIcon from "../../assets/iphone.png";
 import locationIcon from "../../assets/location.png";
@@ -9,16 +8,15 @@ import { motion } from "framer-motion";
 const Footer: React.FC = () => {
   return (
     <div
-      className="relative  bg-cover bg-center text-[#cccccc] flex items-center "
+      className="relative  bg-cover bg-right lg:bg-center text-[#cccccc] flex items-center "
       style={{ backgroundImage: `url(${footerBG})` }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-10 z-0" />
+      <div className="absolute inset-0 bg-black bg-opacity-50" />
 
       <div className="relative z-10 px-[2rem] py-[2rem] lg:px-[10rem]">
         <div className="flex flex-col  lg:flex-row">
           <div className="flex flex-col   gap-10    lg:flex-row lg:gap-[5rem] ">
             <div className="flex flex-col  lg:w-[30%] ">
-              {/* <img src={logo} alt="logo" className="h-20 w-20" /> */}
               <h1 className="text-white text-[1.125rem] font-bold ">
                 Tejas Photo Studio
               </h1>
