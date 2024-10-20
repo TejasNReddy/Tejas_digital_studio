@@ -1,6 +1,5 @@
 import MySwiper from "./MySwiper";
 import parallaxBG from "../../assets/Hero_images/heroimage1.jpg";
-import { Link } from "react-router-dom";
 
 const ParallaxSection: React.FC = () => {
   return (
