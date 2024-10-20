@@ -1,5 +1,6 @@
 import MySwiper from "./MySwiper";
 import parallaxBG from "../../assets/Hero_images/heroimage1.jpg";
+import { Link } from "react-router-dom";
 
 const ParallaxSection: React.FC = () => {
   return (
@@ -15,20 +16,20 @@ const ParallaxSection: React.FC = () => {
         <div className="absolute inset-0 bg-black bg-opacity-65" />
 
         <div className="relative z-10 flex flex-col justify-around items-center gap-10 lg:flex-row lg:justify-around lg:items-center ">
-          <div className="text-[white]">
+          <div className="text-[white] flex flex-col ">
             <h5 className="font-bold text-[8vw] md:text-[4vw] lg:text-[2.5vw]">
               Need help with professional photography?
             </h5>
             <h5 className="font-bold text-[8vw] md:text-[4vw] lg:text-[2.5vw]">
               Let's work together!
             </h5>
-            <button
-            onClick={()=>{window.location.href="/Contact"}}
-              className="text-[1.25rem] font-thin border-[1px] border-white px-4 py-2 rounded-full mt-10 
+            <Link
+            to="/Contact"
+              className="mt-10 w-fit text-[1.25rem] font-thin border-[1px] border-white px-4 py-2 rounded-full  
     hover:text-black hover:border-black hover:bg-white transition-all duration-300 ease-in-out"
             >
               Contact Us
-            </button>
+            </Link>
           </div>
           <div>
             <MySwiper />
