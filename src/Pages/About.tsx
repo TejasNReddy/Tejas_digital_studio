@@ -10,7 +10,7 @@ const About = () => {
       <About_hero />
       <About_content />
       <div
-        className="h-[60vh] w-full bg-cover bg-no-repeat relative"
+        className="h-[60vh] w-full bg-cover bg-center bg-no-repeat relative"
         style={{
           backgroundImage: `url(${about_bg})`,
           backgroundAttachment: "fixed",
