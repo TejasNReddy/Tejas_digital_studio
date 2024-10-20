@@ -19,7 +19,7 @@ const HeroSwiper: React.FC = () => {
       <SwiperSlide>
         <div className="relative w-[100%] h-full flex items-center justify-center">
           <div
-            className="w-full h-full bg-right lg:bg-center bg-no-repeat bg-cover flex items-center justify-baseline"
+            className="w-full h-full bg-bottom lg:bg-center bg-no-repeat bg-cover flex items-center justify-baseline"
             style={{ backgroundImage: `url(${slider_image2})` }}
           >
             <div className="absolute inset-0 bg-black opacity-35 lg:opacity-30" />
@@ -48,7 +48,7 @@ const HeroSwiper: React.FC = () => {
       <SwiperSlide>
         <div className="relative w-full h-full flex items-center justify-center">
           <div
-            className="w-full h-full bg-center lg:bg-center bg-no-repeat bg-cover flex items-center justify-baseline"
+            className="w-full h-full bg-right lg:bg-center bg-no-repeat bg-cover flex items-center justify-baseline"
             style={{ backgroundImage: `url(${slider_image1})` }}
           >
             <div className="absolute inset-0 bg-black opacity-35 lg:opacity-25" />
