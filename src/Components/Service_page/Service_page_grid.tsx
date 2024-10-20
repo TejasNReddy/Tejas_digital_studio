@@ -2,6 +2,7 @@ import { BookImage, CalendarClock, Camera, Wand2 } from "lucide-react";
 import service1 from "../../assets/Service_page/service1.jpg";
 import service2 from "../../assets/Service_page/service2.jpg";
 import service3 from "../../assets/Service_page/service3.jpg";
+import service4 from "../../assets/Service_page/service4.jpg";
 
 interface propstype {
   icon: React.ReactElement;
@@ -87,7 +88,7 @@ const Service_page_grid = () => {
     {
       icon: <BookImage className="w-8 h-8" />,
       title: "Frames & Albums",
-      image: service1, 
+      image: service4, 
       description: [
         "Non-Tearable Album",
         "Canvera Album",

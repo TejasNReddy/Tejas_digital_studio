@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin } from "lucide-react";
 import Contact_hero from "../Components/Contact_page/Contact_hero";
 import contact from '../assets/contact_images/contact.jpg'
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const contact_info = [
@@ -8,17 +9,22 @@ const Contact = () => {
       icon: <Phone size={30} />,
       title: "Call us",
       description: "+91 9986866995",
+      link: "tel:+1234567890",
     },
     {
       icon: <Mail size={30} />,
       title: "Send us an email",
       description: "tejas222666@gmail.com",
+      link: "mailto:tejas222666@gmail.com",
+
     },
     {
       icon: <MapPin size={30} />,
       title: "Visit our office",
       description:
         "Surya city chandupura post anekal taluk, Anekal Main Road, Bengaluru, Karnataka 560099",
+      link: "https://www.google.com/maps/place/Tejas+Digital+Studio/@12.7895552,77.7034246,188m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae6e7e92a261e5:0xd7808f65be77ea3e!8m2!3d12.7895539!4d77.7040683!16s%2Fg%2F11cn2mbq6q?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D",
+
     },
   ];
 
@@ -37,7 +43,8 @@ const Contact = () => {
           </div>
           <div className="flex flex-col gap-7">
             {contact_info.map((info, index) => (
-              <div key={index} className="flex items-center gap-3">
+              <Link to={info.link} target="_blank">
+                 <div key={index} className="flex items-center gap-3">
                 <div className="text-white bg-primary_purple p-3 rounded-full">
                   {info.icon}
                 </div>
@@ -48,6 +55,7 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

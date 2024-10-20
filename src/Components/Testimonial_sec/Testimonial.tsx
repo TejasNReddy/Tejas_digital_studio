@@ -1,5 +1,6 @@
 import MySwiper from "./MySwiper";
 import parallaxBG from "../../assets/Hero_images/heroimage1.jpg";
+import { Link } from "react-router-dom";
 
 const ParallaxSection: React.FC = () => {
   return (
@@ -23,10 +24,11 @@ const ParallaxSection: React.FC = () => {
               Let's work together!
             </h5>
             <button
+            onClick={()=>{window.location.href="/Contact"}}
               className="text-[1.25rem] font-thin border-[1px] border-white px-4 py-2 rounded-full mt-10 
     hover:text-black hover:border-black hover:bg-white transition-all duration-300 ease-in-out"
             >
-              Contact Me
+              Contact Us
             </button>
           </div>
           <div>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 interface mobilenavabar {
@@ -114,7 +115,8 @@ const MobileNavbar: React.FC<mobilenavabar> = ({ navtoggle, setnavtoggle }) => {
             transition={{ duration: 0.8, delay: 0.7 }}
           >
             <Link
-              to="/"
+              to="https://www.instagram.com/tejas_digital_studio/?igsh=MWFnbmRmaWluYzZhZg%3D%3D"
+              target="_blank"
               className="bg-white flex items-center justify-center text-4xl rounded-xl p-2 text-black shadow-xl"
             >
               <FaInstagram />
@@ -126,10 +128,24 @@ const MobileNavbar: React.FC<mobilenavabar> = ({ navtoggle, setnavtoggle }) => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <Link
-              to="/"
+              to="https://youtube.com/@tejas_digital_studio?si=pCdkffnpIZ6wGTJf"
+              target="_blank"
               className="bg-white flex items-center justify-center text-4xl rounded-xl p-2 text-black shadow-xl"
             >
               <FaYoutube />
+            </Link>
+          </motion.span>
+          <motion.span
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: "0", opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+          >
+            <Link
+              to="https://wa.me/9986866995 "
+              target="_blank"
+              className="bg-white flex items-center justify-center text-4xl rounded-xl p-2 text-black shadow-xl"
+            >
+              <FaWhatsapp />
             </Link>
           </motion.span>
         </div>
