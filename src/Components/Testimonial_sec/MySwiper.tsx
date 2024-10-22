@@ -3,35 +3,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import doubleQuote from "../../assets/doubleQuote.png";
-import user1 from "../../assets/works/photoFrame.jpg";
-import user2 from "../../assets/works/photoFrame.jpg";
-import user3 from "../../assets/works/photoFrame.jpg";
+// import user1 from "../../assets/works/photoFrame.jpg";
+// import user2 from "../../assets/works/photoFrame.jpg";
+// import user3 from "../../assets/works/photoFrame.jpg";
 
 const MySwiper: React.FC = () => {
   interface User {
     name: string;
     testimonial: string;
-    img: string;
   }
 
   const users: User[] = [
     {
-      name: "John Doe",
-      testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum. Autem, commodi quae!",
-      img: user1,
+      name: "Madhavi K",
+      testimonial: "Best place for photos and photography.",
     },
     {
-      name: "Jane Doe",
+      name: "Chandan M",
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum. Autem, commodi quae!",
-      img: user2,
+        "Incredible experience! The team's vision and well planned shots exceeded all my expectations.",
     },
     {
-      name: "Sam Smith",
+      name: "R Kishan",
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, illum. Autem, commodi quae!",
-      img: user3,
+        "Talented and professional! They captured every moment with precision and creativity.",
     },
   ];
 
@@ -47,11 +42,11 @@ const MySwiper: React.FC = () => {
     >
       {users.map((user, item) => (
         <SwiperSlide key={item}>
-          <div className="bg-white h-full w-full p-6 md:p-10">
+          <div className="bg-white h-full w-full p-6 md:p-10 rounded-lg">
             <div className="flex justify-around gap-4">
-              <span className="h-[70px] w-[5px] bg-black"></span>
+              <span className="h-[70px] w-[5px] bg-[#574a5e]"></span>
               <div className="flex items-center justify-center">
-                <p className="text-sm md:text-base lg:text-lg">
+                <p className="text-sm md:text-base lg:text-lg text-[#574a5e]">
                   {user.testimonial}
                 </p>
               </div>
@@ -61,12 +56,7 @@ const MySwiper: React.FC = () => {
 
             <div className="flex justify-between items-center">
               <div className="flex justify-center items-center gap-4">
-                <img
-                  src={user.img}
-                  alt="user"
-                  className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full"
-                />
-                <span className="text-sm md:text-base lg:text-lg">
+                <span className="text-sm md:text-base lg:text-lg  text-[#574a5e]">
                   {user.name}
                 </span>
               </div>

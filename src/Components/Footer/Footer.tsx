@@ -1,11 +1,17 @@
 import React from "react";
 import footerBG from "../../assets/footerbackground.jpg";
+import { Link } from "react-router-dom";
+
 import mailIcon from "../../assets/mail.png";
 import iphoneIcon from "../../assets/iphone.png";
 import locationIcon from "../../assets/location.png";
 import { motion } from "framer-motion";
 
 const Footer: React.FC = () => {
+  const links = ["About", "Services", "Works", "Contact"];
+  const MotionLink = motion(Link);
+
+
   return (
     <div
       className="relative  bg-cover bg-right lg:bg-center text-[#cccccc] flex items-center "
@@ -29,16 +35,16 @@ const Footer: React.FC = () => {
               <h1 className="text-white text-[1.125rem] font-bold ">
                 Quick Links
               </h1>
-              <ul className="flex flex-col gap-2 ">
-                {["About", "Services", "Works"].map((link) => (
+              <ul className="flex flex-col gap-2">
+                {links.map((link) => (
                   <li key={link} className="relative">
-                    <motion.a
-                      href={`#${link.toLowerCase()}`}
+                    <MotionLink
+                      to={`/${link.toLowerCase()}`}
                       className="text-[rgb(204,204,204)] relative z-10"
                       whileHover={{ color: "#ffffff" }}
                     >
                       {link}
-                    </motion.a>
+                    </MotionLink>
                     <motion.span
                       className="absolute left-0 bottom-[-5px] h-[2px] w-full bg-white origin-left"
                       initial={{ scaleX: 0 }}

@@ -1,6 +1,6 @@
-import img1 from "../../../assets/works/AllFrame.jpg"
-import img2 from "../../../assets/works/Heart.jpg"
-import img3 from "../../../assets/works/family.jpg"
+import img1 from "../../../assets/works/pic7.jpeg"
+import img2 from "../../../assets/works/pic5.jpeg"
+import img3 from "../../../assets/works/pic10.jpeg"
 
 
 const Works_gallery = () => {
