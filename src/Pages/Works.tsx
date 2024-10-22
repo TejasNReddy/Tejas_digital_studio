@@ -14,6 +14,7 @@ import pic5 from "../assets/works/pic5.jpeg";
 
 import { motion } from "framer-motion";
 import Work_hero from "../Components/Works_page/Work_hero";
+import { Helmet } from "react-helmet";
 
 const Works: React.FC = () => {
   const gridItems: GridItemProps[] = [
@@ -89,6 +90,19 @@ const Works: React.FC = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Works | Tejas Digital Studio</title>
+        <meta
+          name="description"
+          content="Explore the stunning works of Tejas Digital Studio, featuring wedding photography, portraits, and commercial projects. Let our work inspire your next photoshoot."
+        />
+        <meta
+          name="keywords"
+          content="Tejas Digital Studio works, wedding photography portfolio, commercial photography works, event photography portfolio"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       <Work_hero />
       <div className="grid grid-cols-3 grid-rows-3 gap-4 md:max-w-[calc(100vw-350px)] h-full mx-auto my-20 max-md:grid-cols-1 md:grid-rows-1 max-md:w-[80%] ">
         {gridItems.map((item, index) => (
