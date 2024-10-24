@@ -3,7 +3,7 @@ import Contact_hero from "../Components/Contact_page/Contact_hero";
 import contact from "../assets/contact_images/contact.jpg";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import { FaWhatsapp } from "react-icons/fa";
 const Contact = () => {
   const contact_info = [
     {
@@ -11,6 +11,12 @@ const Contact = () => {
       title: "Call us",
       description: "+91 9986866995",
       link: "tel:+91 9986866995",
+    },
+    {
+      icon: <FaWhatsapp size={30} />,
+      title: "Whatsapp Us",
+      description: "+91 9986866995",
+      link: "https://wa.me/9986866995",
     },
     {
       icon: <Mail size={30} />,
@@ -28,7 +34,7 @@ const Contact = () => {
   ];
 
   return (
-    <div>
+    <div className="font-primary-font">
       <Helmet>
         <title>Contact Us | Tejas Digital Studio</title>
         <meta
@@ -61,8 +67,8 @@ const Contact = () => {
                     {info.icon}
                   </div>
                   <div>
-                    <h2 className="text-lg">{info.title}</h2>
-                    <p className="text-xl font-medium  ">{info.description}</p>
+                    <h2 className="text-2xl font-semibold ">{info.title}</h2>
+                    <p className="text-xl font-medium">{info.description}</p>
                   </div>
                 </div>
               </Link>
