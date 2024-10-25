@@ -30,7 +30,7 @@ const Navbar = () => {
 		>
 			<div className='flex items-center justify-center gap-2 w-fit'>
 				<Link to="/"><img src={logo} alt="tejasdigitalstudio" className='w-12'/></Link>
-				<Link to="/" className='text-3xl font-semibold text-white' style={{color:active?'#6A0DAD':'white'}}>Tejas Digital Studio</Link>
+				<Link to="/" className='text-xl md:text-2xl lg:text-3xl font-semibold text-white' style={{color:active?'#6A0DAD':'white'}}>Tejas Digital Studio</Link>
 			</div>
 			<div className='text-4xl cursor-pointer text-white lg:hidden' onClick={()=>{setnavtoggle(true)}} style={{color:active?'#6A0DAD':'white'}}>
 				<GiHamburgerMenu/>
